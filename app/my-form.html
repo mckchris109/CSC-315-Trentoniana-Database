@@ -1,0 +1,63 @@
+<!-- /templates/my-form.html-->
+
+<html>
+    <head>
+        <title>Trentoniana Database</title>
+    </head>
+    <body>
+	<h3>Trentoniana Database Search Tool</h3>
+        <form action="/form-handler" method="POST">
+            <div>
+		Enter a search term and then select the catagory you would like to search in!
+		<input type="text" name="query">
+            </div>
+            
+        <p></p>
+        Search By JHS Name (Ex: "JHS 12")
+        <input type="checkbox" value="1" id="ckname" name="ckname">
+        <p></p>
+        Search By Name (Ex: "Barker")
+        <input type="checkbox" value="2" id="ckname1" name="ckname1">  
+        <p></p>
+        View All Entries
+        <input type="checkbox" value="3" id="ckname2" name="ckname2">  
+        <p></p>
+        <input type="submit" value="Submit">     
+        </form>
+        
+        
+        <form action="/form-propose" method="POST">
+        <p></p>
+        <h3>Propose Change</h3>
+        If there are any mistakes in the data or entries you wish to be entered, please propose your ideas here.
+        <p></p>
+        <input type="text" name="change">
+        <p></p>
+        <input type="submit" value="Submit"> 
+        </form>
+        
+        
+        <form action="/form-handler1" method="POST">
+        <p></p>
+        <h3>Admin Login</h3>
+        User Name
+        <input type="text" name="loginU">
+        <p></p>
+        Password
+        <input type="text" name="loginP">
+        <p></p>
+        <input type="submit" value="Login"> 
+        </form>
+    </body>
+
+    <!-- minimal styling -->
+    <style>
+        form {
+            margin: 1%;
+        }
+
+        div {
+            margin: 1% 0;
+        }
+    </style>
+</html>

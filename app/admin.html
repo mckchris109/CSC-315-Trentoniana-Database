@@ -1,0 +1,160 @@
+<!-- /templates/my-form.html-->
+
+<html>
+    <head>
+        <title>Admin Page</title>
+    </head>
+    <body>
+	<h3>Trentoniana Database Admin Page</h3>
+	<h2>Update</h2>
+        <form action="/form-handler-update" method="POST">
+            <div>
+		Fill out the folling information to update a database entry. Name is a required field. Only fill in parts that you wish to update.
+		<p></p> JHS Name *REQUIRED*
+		<input type="text" name="JName">
+        <p></p> Sound File Name
+        <input type="text" name="SoundN">  
+        <p></p> Link
+        <input type="text" name="Link">  
+        <p></p> Transcript
+        <input type="text" name="Transcript">  
+        <p></p>
+        <input type="submit" value="Update">     
+        </form>
+        <p></p>
+        <h2>Insert</h2>
+        <form action="/form-handler-insert" method="POST">
+            <div>
+		Fill out the folling information to insert a new database entry. Name is a required field. Only fill in parts that you wish to insert.
+		<p></p> JHS Name *REQUIRED*
+		<input type="text" name="JName">
+        <p></p> Sound File Name
+        <input type="text" name="SoundN">  
+        <p></p> Link
+        <input type="text" name="Link">  
+        <p></p> Transcript
+        <input type="text" name="Transcript">  
+        <p></p>
+        <input type="submit" value="Insert">     
+        </form>
+        
+        <p></p>
+        <h2>Delete</h2>
+        <form action="/form-handler-delete" method="POST">
+            <div>
+		Enter the name of the entry you would like to delete.
+		<p></p> JHS Name *REQUIRED*
+		<input type="text" name="JName"> 
+        <p></p>
+        <input type="submit" value="Delete">     
+        </form>
+        
+        <h2>View Users</h2>
+        <form action="/form-handler-viewu" method="POST">
+            <div>
+		Enter the date you want to see the users for
+		<p></p> Date format "yyyy-mm-dd"
+		<input type="text" name="Date"> 
+        <p></p>
+        View all users
+        <input type="checkbox" value="1" id="ckd" name="ckd">
+        <p></p>
+        <input type="submit" value="Search">     
+        </form>
+        
+        <h2>View User Suggestions</h2>
+        <form action="/form-user-updates" method="POST">
+            <div>
+		<p></p> Search based on suggestion ID
+		<input type="text" name="id"> 
+        <p></p>
+        View all entries
+        <input type="checkbox" value="1" id="all" name="all">
+        <p></p>
+        View only verified
+        <input type="checkbox" value="1" id="verified" name="verified">
+        <p></p>
+        View only waiting
+        <input type="checkbox" value="1" id="waiting" name="waiting">
+        <p></p>
+        View only denied
+        <input type="checkbox" value="1" id="denied" name="denied">
+        <p></p>
+        <input type="submit" value="Search">     
+        </form>
+        
+        <h2>Update Suggestions Status</h2>
+        <form action="/form-user-status" method="POST">
+            <div>
+        <p></p> Suggestion ID
+		<input type="text" name="id"> 
+		<p></p>
+        Set status to verified
+        <input type="checkbox" value="1" id="verified" name="verified">
+        <p></p>
+        Set status to waiting
+        <input type="checkbox" value="1" id="waiting" name="waiting">
+        <p></p>
+        Set status to denied
+        <input type="checkbox" value="1" id="denied" name="denied">
+        <p></p>
+        <input type="submit" value="Update">     
+        </form>
+        
+        <h2>View admins</h2>
+        <form action="/form-view-admins" method="POST">
+            <div>
+        <p></p> Search by email
+		<input type="text" name="email"> 
+		<p></p>
+        View all admins
+        <input type="checkbox" value="1" id="all" name="all">
+        <p></p>
+        <input type="submit" value="Search">     
+        </form>
+        
+        <h2>Add admins</h2>
+        <form action="/form-add-admins" method="POST">
+            <div>
+        <p></p> Email
+		<input type="text" name="email"> 
+		<p></p>
+        First Name
+        <input type="text" name="fname"> 
+        <p></p>
+        Last Name
+        <input type="text" name="lname"> 
+        <p></p>
+        Password
+        <input type="text" name="password"> 
+        <p></p>
+        <input type="submit" value="Insert">     
+        </form>
+        
+        <h2>Delete admin</h2>
+        <form action="/form-delete-admins" method="POST">
+            <div>
+        <p></p> Email
+		<input type="text" name="email"> 
+		<p></p>
+        <input type="submit" value="Delete">     
+        </form>
+       
+       
+       
+        <form action="/form-home" method="POST">
+        <input type="submit" value="Home">
+        </form>
+    </body>
+    
+    <!-- minimal styling -->
+    <style>
+        form {
+            margin: 1%;
+        }
+
+        div {
+            margin: 1% 0;
+        }
+    </style>
+</html>
