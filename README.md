@@ -2,8 +2,11 @@
 stage-v-group-13 created by GitHub Classroom
 
 Instructions:
+
 First, download the set of files in the app
+
 Next enter postgres using the following command
+
 $sudo -u postgres psql
 
 Then alter role to superuser and run the following commands.
