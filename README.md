@@ -68,6 +68,7 @@ logout, then login again to inherit new shell environment
 HOW TO RUN
 
 export FLASK_APP=app.py 
+
 flask run
 
 then browse to http://127.0.0.1:5000/
