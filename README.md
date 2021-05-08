@@ -3,7 +3,7 @@ stage-v-group-13 created by GitHub Classroom
 
 Instructions:
 
-First, download the set of files in the app folder and the .csv files in the document folder.  Move the downloads to your desired loaction.  Open up the terminal and CD to the location of the files.
+First, download the set of files in the app folder. That includes the SQL code, the app code, and the CSV files.
 
 Next enter postgres using the following command
 
