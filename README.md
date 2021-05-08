@@ -46,8 +46,10 @@ ONE TIME SETUP
 set the postgreSQL password for user 'lion'
 
 sudo -u postgres psql
-    ALTER USER lion PASSWORD 'lion';
-    \q
+
+ALTER USER lion PASSWORD 'lion';
+    
+\q
 
 install pip for Python 3
 
