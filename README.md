@@ -3,7 +3,7 @@ stage-v-group-13 created by GitHub Classroom
 
 Instructions:
 
-First, download the set of files in the app
+First, download the set of files in the app folder and the .csv files in the document folder.  Move the downloads to your desired loaction.
 
 Next enter postgres using the following command
 
@@ -38,4 +38,6 @@ project=# create extension "cube";
 CREATE EXTENSION
 
 Next run the .sql file with the SQL commands to populate the table.
+
+
 
