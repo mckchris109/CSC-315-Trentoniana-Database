@@ -42,22 +42,37 @@ Next run the .sql file with the SQL commands to populate the table.
 Next part is running the server.
 
 ONE TIME SETUP
-# set the postgreSQL password for user 'lion'
+
+set the postgreSQL password for user 'lion'
+
 sudo -u postgres psql
     ALTER USER lion PASSWORD 'lion';
     \q
 
-# install pip for Python 3
+install pip for Python 3
+
 sudo apt update
+
 sudo apt install python3-pip
 
-# install psycopg2
+install psycopg2
+
 pip3 install psycopg2-binary
 
-# install flask
+install flask
+
 pip3 install flask
 
-# logout, then login again to inherit new shell environment
+logout, then login again to inherit new shell environment
+
+HOW TO RUN
+
+export FLASK_APP=app.py 
+flask run
+
+then browse to http://127.0.0.1:5000/
+
+
 
 
 
